@@ -6,8 +6,13 @@ import ar.edu.unju.edm.model.Principal;
 import ar.edu.unju.edm.model.AñoBisiesto_2;
 import ar.edu.unju.edm.model.NumeroPar_3;
 import ar.edu.unju.edm.model.MesdelAño_4;
-import ar.edu.unju.edm.model.;
-import ar.edu.unju.edm.model.Principal;
+import ar.edu.unju.edm.model.Switch_5;
+import ar.edu.unju.edm.model.While_6;
+import ar.edu.unju.edm.model.For_7;
+import ar.edu.unju.edm.model.DoWhile_8;
+import ar.edu.unju.edm.model.MostrarFor_9;
+import ar.edu.unju.edm.model.MostrarWhile_10;
+import ar.edu.unju.edm.model.MostrarDoWhile_11;
 
 @SpringBootApplication
 public class Tp01MoralesLuciana1Application {
@@ -17,10 +22,10 @@ public class Tp01MoralesLuciana1Application {
 		//punto1
 		Principal factorPrincipal = new Principal();
 		factorPrincipal.setNum(4);
-		System.out.println("El factorial es " + factorPrincipal.main());
+		System.out.println("El factorial es " + factorPrincipal.ResolverFac());
 		//punto2
 		AñoBisiesto_2 Bisiesto = new AñoBisiesto_2();
-		Bisiesto.setAÃ±o(2020);
+		Bisiesto.setAnio(2020);
 		System.out.println("El aÃ±o es " + Bisiesto.Bi());
 		//punto3
 		NumeroPar_3 Par=new NumeroPar_3();
