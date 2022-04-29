@@ -4,20 +4,22 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class NumeroPar_3 {
-	int num; 
-	public int getNum() {
-		return num;
-	}
-	public void setNum(int num) {
-		this.num=num;
-	}
-	public String par() {
-		String resultado;
-		if(num%2==0) {
-			resultado="Es par";
-		}else {
-			resultado="Es impar";
-		}return resultado;
-	}
+	 int num;
+	  public void setNum(int num) {
+	    this.num = num;
+	  }
+	  public int getNum() {
+	    return num;
+	  }
+	  public String par(){
+	    String resultado;
+	    if(num%2==0){
+	      resultado="es par";
+	    }else{
+	      resultado="es impar";
+	    }
+	    return resultado;
+	  }
+
 
 }
