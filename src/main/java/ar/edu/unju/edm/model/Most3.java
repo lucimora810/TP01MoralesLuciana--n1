@@ -3,23 +3,23 @@ package ar.edu.unju.edm.model;
 import org.springframework.stereotype.Component;
 
 @Component
-public class NumeroPar_3 {
+public class Most3 {
 	 int num;
+	  String aux;
 	  public void setNum(int num) {
 	    this.num = num;
 	  }
 	  public int getNum() {
 	    return num;
 	  }
-	  public String par(){
-	    String resultado;
-	    if(num%2==0){
-	      resultado="es par";
-	    }else{
-	      resultado="es impar";
-	    }
+	  public String secu(){
+	    String resultado="";
+	    do{
+	      aux=String.valueOf(num);
+	      resultado= resultado + " " + aux;
+	      num=num-20;
+	    }while(num>=160);
 	    return resultado;
 	  }
-
 
 }

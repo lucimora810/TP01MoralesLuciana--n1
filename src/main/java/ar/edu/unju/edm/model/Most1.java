@@ -1,7 +1,10 @@
 package ar.edu.unju.edm.model;
 
-public class MostrarDoWhile_11 {
-	 int num;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Most1 {
+	int num;
 	  String aux;
 	  public void setNum(int num) {
 	    this.num = num;
@@ -11,12 +14,11 @@ public class MostrarDoWhile_11 {
 	  }
 	  public String secu(){
 	    String resultado="";
-	    do{
+	    for(int i=20;num>=160;num=num-i){
 	      aux=String.valueOf(num);
 	      resultado= resultado + " " + aux;
-	      num=num-20;
-	    }while(num>=160);
+	    }
 	    return resultado;
 	  }
-
+	
 }

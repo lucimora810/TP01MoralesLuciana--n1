@@ -1,7 +1,11 @@
 package ar.edu.unju.edm.model;
 
-public class MostrarFor_9 {
-	int num;
+import org.springframework.stereotype.Component;
+
+@Component
+
+public class Most2 {
+	  int num;
 	  String aux;
 	  public void setNum(int num) {
 	    this.num = num;
@@ -11,11 +15,12 @@ public class MostrarFor_9 {
 	  }
 	  public String secu(){
 	    String resultado="";
-	    for(int i=20;num>=160;num=num-i){
+	    while(num>=160){
 	      aux=String.valueOf(num);
 	      resultado= resultado + " " + aux;
+	      num=num-20;
 	    }
 	    return resultado;
 	  }
-	
+
 }
